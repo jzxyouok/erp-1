@@ -1,0 +1,50 @@
+.v_out{width:1024px;overflow:hidden; margin: 50px auto}
+.v_show{width:800px;overflow:hidden;position:relative;height:600px;float:left}
+.v_cont{ width:6650px;position:absolute;left:0px;top:0px;}
+.v_cont ul{float:left;text-align:center;line-height:50px;}
+.v_cont ul li{width:800px;float:left;margin-top:3px;}
+
+
+/*---圆圈---*/
+.v_out_p{position:relative;overflow:visible}
+.circle{position:absolute;left: 40px;top: 290px;}
+.circle li{width:120px;height:60px;float:left;margin-right:10px;}
+.circle .circle-cur{background:#f00}
+
+/*---切换---*/
+.prev,.next{float:left;margin:105px 9px 0; color:#FFFFFF }
+
+.button_back{
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 40px;
+    opacity: 0.4;
+
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    z-index: 99999;
+}
+.mask {
+    position: absolute; top: 0px; filter: alpha(opacity=110); background-color: #8c8c8c;
+    z-index: 9999; left: 0px;
+    opacity:0.8; -moz-opacity:0.8;
+}
+.mask p{
+    z-index: 10000;
+    color: #0A0A0A;
+    cursor:pointer;
+    float:right;
+}
+
+.masks {
+    margin:0px auto;
+    position: absolute;
+    top: 50px;
+    z-index: 9999;
+}
