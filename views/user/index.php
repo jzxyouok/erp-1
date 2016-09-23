@@ -68,7 +68,7 @@ $isAclAllot = Acl::isAclAuth('','user','allot');
                         <a href="javascript:edit('<?=Tools::sysAuth($val->id)?>', '<?=$val->username?>')" class="isAclAuth" isAcl="<?=$isAclUpdate?>">[修改]</a>
                         <?php if($val->id != USER_ADMIN_ID):?>
                             <a href="javascript:allot('<?=Tools::sysAuth($val->id)?>', '<?=$val->username?>')" class="isAclAuth" isAcl="<?=$isAclAllot?>">[分配角色]</a>
-                            <a href="javascript:confirmurl('<?=Url::toRoute(['user/delete', 'id' => Tools::sysAuth($val->id)])?>', '確定要刪除用戶<?=$val->username?>嗎?')" class="isAclAuth" isAcl="<?=$isAclDel?>">[刪除]</a>
+                            <a href="javascript:confirmurl('<?=Url::toRoute(['/user/delete', 'id' => Tools::sysAuth($val->id)])?>', '確定要刪除用戶<?=$val->username?>嗎?')" class="isAclAuth" isAcl="<?=$isAclDel?>">[刪除]</a>
                         <?php endif;?>
                     </td>
                 <tr>
